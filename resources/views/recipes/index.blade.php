@@ -363,31 +363,60 @@ use Illuminate\Support\Str;
 <body>
 
 <nav class="navbar navbar-dark">
+
     <div class="container">
 
-        <a class="navbar-brand" href="/recipes">
-            Taman Rasa Nusantara
-        </a>
+        @if(session('admin'))
 
-        <div class="d-flex gap-2">
+            <div class="d-flex justify-content-between align-items-center w-100">
 
-            @if(session('admin'))
-                <a href="/admin/dashboard" class="btn btn-light rounded-pill px-3">
-                    Dashboard
+                <a class="navbar-brand fw-bold" href="/recipes">
+                    Taman Rasa Nusantara
                 </a>
 
-                <a href="/recipes/create" class="btn btn-warning rounded-pill px-3">
-                    Tambah
+                <div class="d-flex gap-2">
+
+                    <a href="/admin/dashboard"
+                       class="btn btn-light rounded-pill px-3">
+
+                        Dashboard
+
+                    </a>
+
+                    <a href="/recipes/create"
+                       class="btn btn-warning rounded-pill px-3">
+
+                        Tambah
+
+                    </a>
+
+                    <a href="/admin/logout"
+                       class="btn btn-danger rounded-pill px-3">
+
+                        Logout
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        @else
+
+            <div class="w-100 text-center">
+
+                <a class="navbar-brand fw-bold" href="/recipes">
+
+                    Taman Rasa Nusantara
+
                 </a>
 
-                <a href="/admin/logout" class="btn btn-danger rounded-pill px-3">
-                    Logout
-                </a>
-            @endif
+            </div>
 
-        </div>
+        @endif
 
     </div>
+
 </nav>
 
 <div class="hero">
@@ -531,8 +560,39 @@ use Illuminate\Support\Str;
 </div>
 
 <div class="footer">
-    <h4>Taman Rasa Nusantara</h4>
-    <p>Website resep makanan tradisional Indonesia</p>
+
+    <h4 class="mb-3">
+        Taman Rasa Nusantara
+    </h4>
+
+    <p class="mb-4">
+        Website resep makanan tradisional Indonesia
+    </p>
+
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+
+        <a href="https://github.com/bianca3020"
+           target="_blank"
+           class="btn btn-outline-light rounded-pill px-4">
+
+            GitHub
+
+        </a>
+
+        <a href="https://wa.me/6285647032285"
+           target="_blank"
+           class="btn btn-success rounded-pill px-4">
+
+            WhatsApp
+
+        </a>
+
+    </div>
+
+    <p class="mt-4 text-secondary">
+        © 2026 Taman Rasa Nusantara
+    </p>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
