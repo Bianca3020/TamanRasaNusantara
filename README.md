@@ -173,11 +173,11 @@ Setiap resep memiliki data:
 # 🏠 Homepage
 <p align="center"> <img src="screenshots/homepage.png" width="700"> </p>
 # 🍽️ Daftar Resep
-<p align="center"> <img src="screenshots/recipe-list.png" width="700"> </p>
+<p align="center"> <img src="screenshots/recipes-list.png" width="700"> </p>
 # 🔍 Search & Filter Kategori
 <p align="center"> <img src="screenshots/search-filter.png" width="700"> </p>
 # ⚡ Quick View / Detail Resep (Modal)
-<p align="center"> <img src="screenshots/recipe-detail-modal.png" width="700"> </p>
+<p align="center"> <img src="screenshots/quick-view.png" width="700"> </p>
 # 🔐 Login Admin
 <p align="center"> <img src="screenshots/login-admin.png" width="700"> </p>
 # 🛠️ Admin Dashboard
